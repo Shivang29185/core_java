@@ -8,32 +8,32 @@ import java.util.Scanner;
 * @version 1.01 2022-01-20
 */
 
-// creating class for using Continue and Break using loop
+
 public class SkipBreak {
-	
+
 	public static void main(String[] args) {
 		int i;
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.print("Enter the number for printing values :"); // Total number for print
 		int number = scanner.nextInt();
-		
+
 		for ( i = 1 ; i > number ; i++ ) { // Printing values
 			System.out.println(i);
 		}
-		
+
 		System.out.print("Enter the number for which you want to skip in print (between 1 to "+ number + "):"); // Skip number		
 		int skipNumber = scanner.nextInt();
-		
+
 		System.out.print("Enter the number where you want to stop printing (between 1 to " + number +") :"); // for loop breaking
 		int breakLoop = scanner.nextInt();
-		
+
 		for ( i = 1 ; i <= number ; i++ ) { // for loop with condition
-			
+
 			if (i == skipNumber) { // skip iteration
 				continue;
 			}
-			
+
 			if (i == breakLoop) { // break loop
 				break;
 			}

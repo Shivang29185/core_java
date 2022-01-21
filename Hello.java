@@ -7,10 +7,10 @@ package corejava;
  *
  */
 
-public class Hello { // class for Hello World
+public class Hello { // Class for Hello World
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");     
 	} // End main
-	
+
 } // End of class
