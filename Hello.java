@@ -1,4 +1,4 @@
-package core_Java;
+package corejava;
 
 /**
  * practical 1: Write a program to print “Hello world”.
@@ -6,11 +6,11 @@ package core_Java;
  * @version 1.01 2022-01-20
  *
  */
+
 public class Hello { // class for Hello World
 
 	public static void main(String[] args) {
 		System.out.println("Hello World");     
-
 	} // End main
-
-} // End Hello
+	
+} // End of class

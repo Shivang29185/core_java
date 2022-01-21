@@ -1,7 +1,7 @@
-package core_Java;
+package corejava;
 
-//importing scanner class.
 import java.util.Scanner;
+
 /**
 * Practical 6: Write a program to demonstrate the example of a break/Continue statement
 * @author Shivang
@@ -9,34 +9,36 @@ import java.util.Scanner;
 */
 
 // creating class for using Continue and Break using loop
-public class Skip_break {
+public class SkipBreak {
+	
 	public static void main(String[] args) {
 		int i;
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Enter the number for printing values :"); //total number for print
-		int number = sc.nextInt();
+		System.out.print("Enter the number for printing values :"); // Total number for print
+		int number = scanner.nextInt();
 		
-		for( i = 1 ; i > number ; i++ ) { // printing values
+		for ( i = 1 ; i > number ; i++ ) { // Printing values
 			System.out.println(i);
 		}
 		
 		System.out.print("Enter the number for which you want to skip in print (between 1 to "+ number + "):"); // Skip number		
-		int skip_number = sc.nextInt();
+		int skipNumber = scanner.nextInt();
 		
 		System.out.print("Enter the number where you want to stop printing (between 1 to " + number +") :"); // for loop breaking
-		int break_loop = sc.nextInt();
+		int breakLoop = scanner.nextInt();
 		
-		for( i = 1 ; i <= number ; i++ ) { // for loop with condition
+		for ( i = 1 ; i <= number ; i++ ) { // for loop with condition
 			
-			if (i == skip_number) { // skip iteration
+			if (i == skipNumber) { // skip iteration
 				continue;
 			}
-			if(i == break_loop) { // break loop
+			
+			if (i == breakLoop) { // break loop
 				break;
 			}
 			System.out.println(i); // printing remaining values
 		}
-		
-	}
-}
+	} // End of main
+	
+} // End of class
