@@ -36,7 +36,7 @@ public class SkipBreak {
 			if (i == breakLoop) { // Break loop
 				break;
 			}
-			System.out.println(i); // printing remaining values
+			System.out.println(i); // Printing remaining values
 		}
 	} // End of main
 	

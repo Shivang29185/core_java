@@ -9,9 +9,8 @@ import java.util.Scanner;
  * @version 1.01 2022-01-20
  */
 
-
 public class FindingMonth {
-	
+
 	public static void main(String[] args) {	
 		Scanner scanner = new Scanner(System.in);
 
