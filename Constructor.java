@@ -18,6 +18,7 @@ public class Constructor {
 		int number = a;
 		int number1 = b;
 		int sum = number + number1;
+
 		System.out.println("Parameterized Constructor");
 		System.out.println(sum);
 	}

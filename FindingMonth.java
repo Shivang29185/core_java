@@ -20,7 +20,7 @@ public class FindingMonth {
 
 		switch (number) { // Choose number
 
-			case 1:  
+			case 1: 
 				System.out.println("January");
 				break; 
 
@@ -72,5 +72,5 @@ public class FindingMonth {
 				throw new IllegalArgumentException("Unexpected value: " + number);
 		}
 	} // End of main
-	
+
 } // End of class

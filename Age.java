@@ -4,9 +4,9 @@ package corejava;
  * Practical 2: Write a program to demonstrate the use of if / else statements.
  * @author Shivang
  * @version 1.01 2022-01-20
+ * Checking age for vote
  */
 
-// Checking age for vote
 public class Age {
 
 	public static void main(String[] args) {

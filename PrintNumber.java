@@ -24,20 +24,19 @@ public class PrintNumber {
 
 		// Printing numbers using While loop
 		System.out.println("---Printing number using while loop---");
-		int i = 1; // initialization of i
-		while (i <= number1) { // While condition
-			System.out.println(i); // print the value of i
+		int i = 1; 
+		while (i <= number1) { 
+			System.out.println(i); 
 			i++;
 		}
 
 		// Printing numbers using Do while loop
 		System.out.println("---Printing number using while loop---");
-		int j = 1; // initialization of j
+		int j = 1; 
 		do {
-			System.out.println(j); // print the value of j
+			System.out.println(j); 
 			j++;
-
-		} while (j <= number2); // do while condition
+		} while (j <= number2); 
 	} // End of main
 
 } // End of class

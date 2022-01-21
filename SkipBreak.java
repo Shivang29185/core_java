@@ -8,7 +8,6 @@ import java.util.Scanner;
 * @version 1.01 2022-01-20
 */
 
-
 public class SkipBreak {
 
 	public static void main(String[] args) {
@@ -25,16 +24,16 @@ public class SkipBreak {
 		System.out.print("Enter the number for which you want to skip in print (between 1 to "+ number + "):"); // Skip number		
 		int skipNumber = scanner.nextInt();
 
-		System.out.print("Enter the number where you want to stop printing (between 1 to " + number +") :"); // for loop breaking
+		System.out.print("Enter the number where you want to stop printing (between 1 to " + number +") :"); // For loop breaking
 		int breakLoop = scanner.nextInt();
 
-		for ( i = 1 ; i <= number ; i++ ) { // for loop with condition
+		for ( i = 1 ; i <= number ; i++ ) { // For loop with condition
 
-			if (i == skipNumber) { // skip iteration
+			if (i == skipNumber) { // Skip iteration
 				continue;
 			}
 
-			if (i == breakLoop) { // break loop
+			if (i == breakLoop) { // Break loop
 				break;
 			}
 			System.out.println(i); // printing remaining values
