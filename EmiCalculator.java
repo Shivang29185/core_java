@@ -17,9 +17,9 @@ public class EmiCalculator {
 		float time = t;
 		float emi;
 
-		rate = rate /(12 * 100); 
+		rate = rate / (12 * 100); 
 		time = time * 12; 
-		emi= (( principle * rate * (float) Math.pow (1 + rate, time )) / ((float) Math.pow ( 1 + rate, time ) -1 ));
+		emi= (( principle * rate * (float) Math.pow (1 + rate, time )) / ((float) Math.pow ( 1 + rate, time ) - 1 ));
  
 		System.out.print("EMI is= "+emi+"\n");
 	}

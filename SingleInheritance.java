@@ -8,6 +8,7 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-24
 */
+
 class ParentClass {
 
 	String emailid;
@@ -32,7 +33,7 @@ public class SingleInheritance extends ParentClass {
 	static String name;
 	static String mobileNo;
 
-	void display() {
+	void display() { // Display method
 		System.out.println();
 		System.out.println("Userid is:" +this.userid);
 		System.out.println("Name is:" + name);

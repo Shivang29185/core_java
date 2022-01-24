@@ -20,7 +20,7 @@ abstract class Triangle {
 	abstract void areaOfTriangle(float height, float breath); // Abstract area of triangle method
 } // End of class
 
-public class AbstractionDemo extends Triangle{
+public class AbstractionDemo extends Triangle {
 
 	static float height, breath;
 	float area;

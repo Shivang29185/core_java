@@ -29,6 +29,7 @@ public class SkipBreak {
 				System.out.println();
 				continue;
 			}
+			
 			if (breakRound.equalsIgnoreCase("yes")) {
 				System.out.println("Iteration Stoped.");
 				break;
