@@ -6,12 +6,12 @@ import java.util.Scanner;
 * Practical 8: Apply EMI Calculator in Java - Java program to calculate EMI using Class, Object, Variables, Operators, 
  	and Datatypes.
 * @author Shivang
-* @version 1.01 2022-01-20
+* @version 1.01 2022-01-21
 */
 
 public class EmiCalculator {
 	
-	public void Calculate(float p, float r, float t) { // Method to calculate EMI
+	public void calculate(float p, float r, float t) { // Method to calculate EMI
 		float principle = p;
 		float rate = r;
 		float time = t;
@@ -36,8 +36,10 @@ public class EmiCalculator {
 		System.out.print("Enter the loan time period:"); // Loan time
 		float time = scanner.nextFloat();
 
+		scanner.close();
+
 		EmiCalculator emiCalculator = new EmiCalculator();
-		emiCalculator.Calculate (principle, interest, time);
+		emiCalculator.calculate (principle, interest, time);
 	} // End of main
 	
 }// End of class

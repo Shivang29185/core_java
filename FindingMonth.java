@@ -17,6 +17,8 @@ public class FindingMonth {
 		System.out.print("Enter the month number(1 to 12): "); // Taking user input
 		int number = scanner.nextInt();
 
+		scanner.close();
+
 		switch (number) { // Choose number
 
 			case 1: 

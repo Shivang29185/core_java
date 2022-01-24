@@ -11,33 +11,53 @@ import java.util.Scanner;
 public class SkipBreak {
 
 	public static void main(String[] args) {
-		int i;
+		int i,j;
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Enter the number for printing values :"); // Total number for print
+		System.out.print("Enter the number of Rounds :"); // Total number of rounds for loop
 		int number = scanner.nextInt();
 
-		for ( i = 1 ; i > number ; i++ ) { // Printing values
-			System.out.println(i);
-		}
+		for ( i = 1; i <= number; i++ ) { // For loop with condition
+			System.out.print("Want to Skip Round" + i + "(yes/no):");
+			String continueRound = scanner.next();
 
-		System.out.print("Enter the number for which you want to skip in print (between 1 to "+ number + "):"); // Skip number		
-		int skipNumber = scanner.nextInt();
+			System.out.print("Want to Break Round" + i + "(yes/no):");
+			String breakRound = scanner.next();
 
-		System.out.print("Enter the number where you want to stop printing (between 1 to " + number +") :"); // For loop breaking
-		int breakLoop = scanner.nextInt();
-
-		for ( i = 1 ; i <= number ; i++ ) { // For loop with condition
-
-			if (i == skipNumber) { // Skip iteration
+			if (continueRound.equalsIgnoreCase("yes")) {
+				System.out.println("Skip Round" + i +".");
+				System.out.println();
 				continue;
 			}
-
-			if (i == breakLoop) { // Break loop
+			if (breakRound.equalsIgnoreCase("yes")) {
+				System.out.println("Iteration Stoped.");
 				break;
 			}
-			System.out.println(i); // Printing remaining values
+
+			System.out.print("Enter the last value for print in Round" + i + ":"); // Total number for print
+			int number2 = scanner.nextInt();
+
+			System.out.print("Enter the number for which you want to skip in print (between 1 to "+ number2 + "):"); // Skip for number1		
+			int skipNumber = scanner.nextInt();
+
+			System.out.print("Enter the number where you want to stop printing (between 1 to " + number2 +") :"); // Breaking for number1
+			int breakLoop = scanner.nextInt();
+
+			System.out.println("Values of Round" + i +": ");
+			for (j = 1; j <= number2; j++ ) { // 
+				if (j == skipNumber) { // Skip iteration
+					continue;
+				}
+
+				if (j == breakLoop) { // Break loop
+					break;
+				}
+				System.out.print(j + " ");// Printing remaining values
+			}
+			System.out.println();
+			System.out.println();
 		}
+		scanner.close();
 	} // End of main
 	
 } // End of class

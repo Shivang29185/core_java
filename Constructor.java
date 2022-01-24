@@ -24,8 +24,8 @@ public class Constructor {
 	}
 
 	public static void main(String[] args) {
-		Constructor constructor = new Constructor();
-		Constructor constructor1 = new Constructor(5, 20);
+		new Constructor();
+		new Constructor(5, 20);
 	} // End of main
 
 } //End of class

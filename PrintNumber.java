@@ -22,6 +22,8 @@ public class PrintNumber {
 		System.out.print("Enter the number for do while loop:"); 
 		int number2 = scanner.nextInt();
 
+		scanner.close();
+
 		// Printing numbers using While loop
 		System.out.println("---Printing number using while loop---");
 		int i = 1; 

@@ -3,7 +3,7 @@ package corejava;
 /**
 * Practical 10: Create programs of all the string methods like charAt(), concat(), equals() etc.
 * @author Shivang
-* @version 1.01 2022-01-20
+* @version 1.01 2022-01-21
 */
 
 public class StringMethods {
@@ -33,7 +33,6 @@ public class StringMethods {
 
 		System.out.println("String End with Specified character1: " + string.endsWith("ou") + "\tString End with Specified "
 		+ "character2: " + string.endsWith("hel") );
-
 		System.out.println("String Start with Specified character1: " + string.startsWith("re") + "\tString Start with Specified "
 		+ "character2: " + string.startsWith("he") );
 

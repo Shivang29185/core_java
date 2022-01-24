@@ -16,6 +16,8 @@ public class Pattern {
 		System.out.print("Enter the number :"); // Enter number for creating pattern
 		int number = scanner.nextInt();
 
+		scanner.close();
+
 		for (int i = 1 ; i <= number ; i++) { // For loop with condition
 			for (int j = 1 ; j <= i ; j++) { // For loop with condition
 				System.out.print("*");

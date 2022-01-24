@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
 * Practical 11: Write a practical to use this variable.
 * @author Shivang
-* @version 1.01 2022-01-20
+* @version 1.01 2022-01-24
 */
 
 public class ThisDemo {
 
-	int number1,number2,sum;
+	int number1, number2, sum;
 	public ThisDemo(int value1, int value2) {
 		this.number1 = value1;
 		this.number2 = value2;
@@ -24,11 +24,13 @@ public class ThisDemo {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Enter the first number: "); // First value
+		System.out.print("Enter the first number: "); // First value
 		int value1 = scanner.nextInt();
 
-		System.out.println("Enter the first number: "); // Second value
+		System.out.print("Enter the second number: "); // Second value
 		int value2 = scanner.nextInt();
+
+		scanner.close();
 
 		ThisDemo thisDemo = new ThisDemo(value1, value2);
 		thisDemo.display();
