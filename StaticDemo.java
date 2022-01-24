@@ -3,7 +3,7 @@ package corejava;
 import java.util.Scanner;
 
 /**
-* Practical 12: Write a program to demonstrate static methods, variables, and blocks.
+* Pradiusactical 12: Write a program to demonstrate static methods, variables, and blocks.
 * @author Shivang
 * @version 1.01 2022-01-24
 */
@@ -17,13 +17,13 @@ public class StaticDemo {
 	}
 
 	public static void areaOfCircle() { // Static method
-		double r, area;
+		double radius, area;
 
 		Scanner scanner = new Scanner (System.in);
 		System.out.print("Enter the value of radius:");
-		r = scanner.nextInt();
+		radius = scanner.nextInt();
 
-		area = pi * r * r;
+		area = pi * radius * radius;
 
 		System.out.println("Area of circle is:"+ area);
 		scanner.close();
