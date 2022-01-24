@@ -35,9 +35,9 @@ public class SingleInheritance extends ParentClass {
 
 	void display() { // Display method
 		System.out.println();
-		System.out.println("Userid is:" +this.userid);
+		System.out.println("Userid is:" + this.userid);
 		System.out.println("Name is:" + name);
-		System.out.println("Emailid is:" +this.emailid);
+		System.out.println("Emailid is:" + this.emailid);
 		System.out.println("Mobile no is:" + mobileNo);
 	}
 

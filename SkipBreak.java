@@ -11,13 +11,12 @@ import java.util.Scanner;
 public class SkipBreak {
 
 	public static void main(String[] args) {
-		int i,j;
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Enter the number of Rounds :"); // Total number of rounds for loop
 		int number = scanner.nextInt();
 
-		for ( i = 1; i <= number; i++ ) { // For loop with condition
+		for (int i = 1; i <= number; i++ ) { // For loop with condition
 			System.out.print("Want to Skip Round" + i + "(yes/no):");
 			String continueRound = scanner.next();
 
@@ -45,7 +44,7 @@ public class SkipBreak {
 			int breakLoop = scanner.nextInt();
 
 			System.out.println("Values of Round" + i +": ");
-			for (j = 1; j <= number2; j++ ) { // 
+			for (int j = 1; j <= number2; j++ ) { // 
 				if (j == skipNumber) { // Skip iteration
 					continue;
 				}

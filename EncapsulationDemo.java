@@ -15,7 +15,7 @@ class Student {
 	private String studentBranch;
 	private String studentResult;
 
-	// Getter & Setter methods
+	// Getter & setter methods
 	public String getStudentName() {
 		return studentName;
 	}
@@ -44,16 +44,16 @@ class Student {
 }
 
 public class EncapsulationDemo {
-	
+
 	public static void main(String[] args) {
 		int choice;
 		String studentName;
 		String studentBranch;
 		String studentResult;
 		int studentRollNo;
-		
+
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.print("Enter the number of total Data Entry:"); // Total number of Data
 		choice = scanner.nextInt();
 
@@ -67,11 +67,11 @@ public class EncapsulationDemo {
 			System.out.print("Enter Student Branch:"); // Student branch
 			studentBranch = scanner.next();
 
-			System.out.print("Enter Student result(pass/Fail):"); // Student result
+			System.out.print("Enter Student result(pass / Fail):"); // Student result
 			studentResult = scanner.next();
 
 			System.out.println();
-			System.out.println("Student Details:"); // Display Student Details
+			System.out.println("Student Details:"); // Display student details
 			System.out.println("Name of student is:" + studentName); 
 			System.out.println("Roll no is:" + studentRollNo);
 			System.out.println("Branch is:" + studentBranch);

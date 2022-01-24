@@ -9,7 +9,7 @@ import java.util.Scanner;
 */
 
 public class StaticDemo {
-	
+
 	static double pi = 3.14; // Static variable
 
 	static { // Static block
