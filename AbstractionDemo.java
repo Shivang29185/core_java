@@ -8,28 +8,33 @@ import java.util.Scanner;
 * @version 1.01 2022-01-24
 */
 
-abstract class Triangle {
-	
+abstract class Shape {
+
 	float height1, breath1;
-	
-	/*public Triangle(float height, float breath) { // Constructor for Triangle
-		this.height1 = height;
-		this.breath1 = breath;
-	}*/
+	int side;
+
+	public Shape(int side) {
+		this.side = side;
+		int area = side * side;
+
+		System.out.println();
+		System.out.println("Area of Square is:" + area);
+	}
 
 	abstract void areaOfTriangle(float height, float breath); // Abstract area of triangle method
+
 } // End of class
 
-public class AbstractionDemo extends Triangle {
+public class AbstractionDemo extends Shape {
 
 	static float height, breath;
+	static int side;
 	float area;
 
-	/*public AbstractionDemo(float height, float breath) { // Constructor for abstraction demo
-		super(height,breath);
-	}*/
-	
-	@Override
+	public AbstractionDemo(int side) { // Constructor for abstraction demo
+		super(side);
+	}
+
 	void areaOfTriangle(float height, float breat) { // Abstraction override
 		area = (height * breath) / 2;
 		System.out.println("Area of Triangle is:" + area);
@@ -38,17 +43,19 @@ public class AbstractionDemo extends Triangle {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Enter the Height:");
-		height = scanner.nextInt();
+		System.out.print("Enter the Height of triangle:");
+		height = scanner.nextFloat();
 
-		System.out.print("Enter the Breath:");
-		breath = scanner.nextInt();
+		System.out.print("Enter the Breath of triangle:");
+		breath = scanner.nextFloat();
+
+		System.out.print("Enter the side of square:");
+		side = scanner.nextInt();
 
 		scanner.close();
 
-		//AbstractionDemo abstractionDemo = new AbstractionDemo(height, breath);
-		AbstractionDemo abstractionDemo = new AbstractionDemo();
+		AbstractionDemo abstractionDemo = new AbstractionDemo(side);
 		abstractionDemo.areaOfTriangle(height, breath);
 	} // End of main
-	
+
 } // End of class
