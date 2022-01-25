@@ -8,12 +8,10 @@ import java.util.Scanner;
 * @version 1.01 2022-01-25
 */
 
-class Addition{
-
-	int sum, sum2, sum3;
+class Addition {
 
 	public void Add(int value1, int value2) { // Add with two parameter method
-		sum = value1 + value2;
+		int sum = value1 + value2;
 
 		System.out.println();
 		System.out.println("Function Overloading");
@@ -21,7 +19,7 @@ class Addition{
 	}
 
 	public void Add(int value1, int value2, int value3) { // Add with three parameter method
-		sum2 = value1 + value2 + value3;
+		int sum2 = value1 + value2 + value3;
 
 		System.out.println();
 		System.out.println("Function Overloading");
@@ -29,7 +27,7 @@ class Addition{
 	}
 
 	public void Add(int value1, int value2, int value3, int value4) { // Add with two parameter method
-		sum3 = value1 + value2 + value3 + value4;
+		int sum3 = value1 + value2 + value3 + value4;
 
 		System.out.println();
 		System.out.println("Function Overloading");
@@ -38,12 +36,10 @@ class Addition{
 
 } // End of class
 
-public class Polymorphism extends Addition{
-
-	int sum4;
+public class Polymorphism extends Addition {
 
 	public void Add(int value1, int value2) { // Add two number in overriding
-		sum4 = value1 + value2;
+		int sum4 = value1 + value2;
 
 		System.out.println();
 		System.out.println("Function Overridding");
