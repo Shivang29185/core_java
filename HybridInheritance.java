@@ -93,7 +93,7 @@ class Job extends JavaInterview {
 
 public class HybridInheritance extends Job {
 
-	void jobDetails( ) {
+	void jobDetails() {
 		System.out.println("Your Salary will be 30,000 Rs ");
 		System.out.println("Yearly 18 paid leave is allowed");
 	}

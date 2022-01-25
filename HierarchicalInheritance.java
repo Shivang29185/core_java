@@ -27,7 +27,7 @@ class Internship {
 
 class Java extends Internship {
 
-	void javaInternship( ) { // Java internship
+	void javaInternship() { // Java internship
 		System.out.println();
 		System.out.println("Duration of Internship is 6 Months");
 		System.out.println("Stipend for java internship is 5000");
@@ -38,7 +38,7 @@ class Java extends Internship {
 
 class Android extends Internship {
 
-	void androidInternship( ) { // Android internship
+	void androidInternship() { // Android internship
 		System.out.println();
 		System.out.println("Duration of Internship is 6 Months");
 		System.out.println("Stipend for Android internship is 7000");
@@ -49,7 +49,7 @@ class Android extends Internship {
 
 class Angular extends Internship {
 
-	void angularInternship( ) { // Angular internship
+	void angularInternship() { // Angular internship
 		System.out.println();
 		System.out.println("Duration of Internship is 6 Months");
 		System.out.println("Stipend for Angular internship is 5000");
@@ -62,7 +62,7 @@ public class HierarchicalInheritance extends Internship {
 
 	static String input;
 
-	String details( ) { // User details
+	String details() { // User details
 		Scanner scanner = new Scanner(System.in);
 		System.out.println();
 		System.out.println("Enter 'Java' for Checking Java Internship Details");
@@ -79,7 +79,7 @@ public class HierarchicalInheritance extends Internship {
 		HierarchicalInheritance hierarchicalInheritance = new HierarchicalInheritance();
 		hierarchicalInheritance.details();
 
-		while(true ) {
+		while(true) {
 			if(input.equalsIgnoreCase("java")) {
 				Java java = new Java();
 				java.javaInternship();
