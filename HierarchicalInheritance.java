@@ -79,8 +79,8 @@ public class HierarchicalInheritance extends Internship {
 		HierarchicalInheritance hierarchicalInheritance = new HierarchicalInheritance();
 		hierarchicalInheritance.details();
 
-		while(true) {
-			if(input.equalsIgnoreCase("java")) {
+		while (true) {
+			if (input.equalsIgnoreCase("java")) {
 				Java java = new Java();
 				java.javaInternship();
 				java.checkInternshipDetail();

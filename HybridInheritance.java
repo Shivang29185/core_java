@@ -18,21 +18,21 @@ class JavaInterview {
 		System.out.print("Do you know about class(yes / no):");
 		String classAnswer = scanner.next();
 
-		if(classAnswer.equalsIgnoreCase("yes")) {
+		if (classAnswer.equalsIgnoreCase("yes")) {
 			count++;
-}
-		
+		}
+
 		System.out.print("Do you know about Object(yes / no):");
 		String objectAnswer = scanner.next();
 
-		if(objectAnswer.equalsIgnoreCase("yes")) {
+		if (objectAnswer.equalsIgnoreCase("yes")) {
 			count++;
 		}
 
 		System.out.print("Do you know about Abstraction(yes / no):");
 		String abstractionAnswer = scanner.next();
 
-		if(abstractionAnswer.equalsIgnoreCase("yes")) {
+		if (abstractionAnswer.equalsIgnoreCase("yes")) {
 			count++;
 		}
 
@@ -44,7 +44,7 @@ class JavaInterview {
 class Intern extends JavaInterview {
 
 	void applyedInternship() { // Internship method
-		if(count >= 2) {
+		if (count >= 2) {
 			System.out.println();
 			System.out.println("Result:Pass   Marks:" + count);
 			System.out.println("You are applicable for Internship in our company");
@@ -65,18 +65,18 @@ class Job extends JavaInterview {
 		System.out.print("Do you know about Inheritance(yes / no):");
 		String inheritanceAnswer = scanner.next();
 
-		if(inheritanceAnswer.equalsIgnoreCase("yes")) {
+		if (inheritanceAnswer.equalsIgnoreCase("yes")) {
 			count++;
 		}
 
 		System.out.print("Do you know about Interface(yes / no):");
 		String interfaceAnswer = scanner.next();
 
-		if(interfaceAnswer.equalsIgnoreCase("yes")) {
+		if (interfaceAnswer.equalsIgnoreCase("yes")) {
 			count++;
 		}
 
-		if(count >= 3) {
+		if (count >= 3) {
 			System.out.println();
 			System.out.println("Result:Pass   Marks:" + count);
 			System.out.println("You are applicable for Job in our company");
@@ -104,7 +104,7 @@ public class HybridInheritance extends Job {
 		System.out.print("Enter the choice of Interview(Internship / Job):");
 		String choice = scanner.next();
 
-		if(choice.equalsIgnoreCase("Internship")) {
+		if (choice.equalsIgnoreCase("Internship")) {
 			Intern intern = new Intern();
 			intern.basicJava();
 			intern.applyedInternship();
@@ -113,7 +113,7 @@ public class HybridInheritance extends Job {
 			hybridInheritance.basicJava();
 			hybridInheritance.applyedJob();
 
-			if(count >= 3) {
+			if (count >= 3) {
 				hybridInheritance.jobDetails();
 			}
 
