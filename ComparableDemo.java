@@ -35,22 +35,22 @@ class StudentDetails implements Comparable<StudentDetails> {
 public class ComparableDemo {
 
 	public static void main(String[] args) {
-		ArrayList<StudentDetails> studentDetails = new ArrayList<StudentDetails>();
-		studentDetails.add(new StudentDetails(2, "Shivang", 21));
-		studentDetails.add(new StudentDetails(3, "Ravi", 23));
-		studentDetails.add(new StudentDetails(1, "Rutvik", 20));
+		ArrayList<StudentDetails> studentDetailsList = new ArrayList<StudentDetails>();
+		studentDetailsList.add(new StudentDetails(2, "Shivang", 21));
+		studentDetailsList.add(new StudentDetails(3, "Ravi", 23));
+		studentDetailsList.add(new StudentDetails(1, "Rutvik", 20));
 
 		System.out.println("List before Shorting"); // Printing Before Shorting
-		for (StudentDetails studentDetails2 : studentDetails) {
-			System.out.println(studentDetails2);
+		for (StudentDetails studentDetails : studentDetailsList) {
+			System.out.println(studentDetails);
 		}
 
-		Collections.sort(studentDetails); // Shorting method
+		Collections.sort(studentDetailsList); // Shorting method
 
 		System.out.println();
 		System.out.println("List After Shorting"); // Printing After Shorting
-		for (StudentDetails studentDetails2 : studentDetails) {
-			System.out.println(studentDetails2);
+		for (StudentDetails studentDetails : studentDetailsList) {
+			System.out.println(studentDetails);
 		}
 	} // End of main
 

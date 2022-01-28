@@ -40,36 +40,37 @@ class AgeComparator implements Comparator <Students> {
 public class ComparatorDemo {
 
 	public static void main(String[] args) {
-		ArrayList<Students> students= new ArrayList<Students>();
-		students.add(new Students(2, "Shivang", 21));
-		students.add(new Students(3, "Ravi", 23));
-		students.add(new Students(1, "Rutvik", 20));
+		ArrayList<Students> studentsList= new ArrayList<Students>();
+		studentsList.add(new Students(2, "Shivang", 21));
+		studentsList.add(new Students(3, "Ravi", 23));
+		studentsList.add(new Students(1, "Rutvik", 20));
 
 		System.out.println("List before Shorting"); // Printing Before Shorting
-		for (Students students2 : students) {
-			System.out.println(students2);
+		for (Students students : studentsList) {
+			System.out.println(students);
 		}
 
-		Collections.sort(students, new Comparator<Students>() { // Shorting method
+		Collections.sort(studentsList, new Comparator<Students>() { // Shorting method
 
 			@Override
 			public int compare(Students students1, Students students2) {
 				return students1.name.compareTo(students2.name);
 			}
+
 		});
 
 		System.out.println();
 		System.out.println("List After Shorting using Name"); // Printing After Shorting
-		for (Students students2 : students) {
-			System.out.println(students2);
+		for (Students students : studentsList) {
+			System.out.println(students);
 		}
 
-		Collections.sort(students, new AgeComparator()); // Shorting method through class
+		Collections.sort(studentsList, new AgeComparator()); // Shorting method through class
 
 		System.out.println();
 		System.out.println("List After Shorting using age"); // Printing After Shorting
-		for (Students students2 : students) {
-			System.out.println(students2);
+		for (Students students : studentsList) {
+			System.out.println(students);
 		}
 	} // End of main
 

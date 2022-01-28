@@ -25,7 +25,6 @@ abstract class Shape {
 
 public class AbstractionDemo extends Shape {
 
-	static float height, breath;
 	static int side;
 
 	public AbstractionDemo(int side) { // Constructor for abstraction demo
@@ -38,6 +37,7 @@ public class AbstractionDemo extends Shape {
 	}
 
 	public static void main(String[] args) {
+		float height, breath;
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Enter the Height of triangle:");
