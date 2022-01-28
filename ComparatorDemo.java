@@ -7,7 +7,7 @@ import java.util.Comparator;
 /**
 * Practical 23:Write a program to demonstrate the comparator interface.
 * @author Shivang
-* @version 1.01 2022-01-27
+* @version 1.01 2022-01-28
 */
 class Students {
 
