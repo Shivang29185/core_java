@@ -5,11 +5,10 @@ package corejava;
 * @author Shivang
 * @version 1.01 2022-01-21
 */
-
 public class StringMethods {
 
 	public static void main(String[] args) {
-		String string = "Hello how are you"; // Initialization String
+		String string = "Hello how are you"; // Initialization Strings
 		String string2 = " I am Fine";
 		String string3 = "";
 
@@ -52,4 +51,4 @@ public class StringMethods {
 		System.out.println("Remove White Space from both Side: " + string2.trim());
 	} // End of main
 
-} // End of class
+} // End of string methods class

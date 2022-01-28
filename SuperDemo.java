@@ -7,23 +7,21 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-24
 */
-
 class SuperClass {
 
-	int number1, number2, sub;
-
-	public SuperClass(int value1, int value2) {
+	int show(int value1, int value2) {
 		System.out.println("Inside the parent");
-		sub = value1 - value2;
-		System.out.println("Substraction of two numbers:" + sub);
+		int substraction = value1 - value2;
+		return substraction;
 	}
-} // End of class
+
+} // End of super class
 
 class SuperDemo extends SuperClass {
 
 	public SuperDemo(int value1, int value2) {
-		super(value1, value2);
 		System.out.println("Inside the Child");
+		System.out.println("Substraction of two numbers:" + super.show(value1, value2));
 	}
 
 	public static void main(String[] args) {
@@ -40,4 +38,4 @@ class SuperDemo extends SuperClass {
 		new SuperDemo(value1, value2);
 	} // End of main
 
-} // End of class
+} // End of super demo class

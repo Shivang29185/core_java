@@ -7,7 +7,6 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-21
 */
-
 public class Wrapper {
 
 	public static void main(String[] args) {
@@ -31,4 +30,4 @@ public class Wrapper {
 		}
 	} // End of main
 
-} // End of class
+} // End of Wrapper class

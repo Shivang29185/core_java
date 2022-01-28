@@ -7,19 +7,24 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-24
 */
+class ThisSum {
 
-public class ThisDemo {
+	int value1;
+	int value2;
 
-	int number1, number2, sum;
-	public ThisDemo(int value1, int value2) {
-		this.number1 = value1;
-		this.number2 = value2;
-		sum = number1 + number2;
+	ThisSum(int value1, int value2) {
+		this.value1 = value1;
+		this.value2 = value2;
 	}
 
 	public void display() {
+		int sum = value1 + value2;
 		System.out.println("Additition of both number is (using This): " + sum); // Displaying Addition
 	}
+
+} // End of This sum class
+
+public class ThisDemo {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -32,8 +37,8 @@ public class ThisDemo {
 
 		scanner.close();
 
-		ThisDemo thisDemo = new ThisDemo(value1, value2);
+		ThisSum thisDemo = new ThisSum(value1, value2);
 		thisDemo.display();
 	} //End main
 
-} //End class
+} //End This demo class

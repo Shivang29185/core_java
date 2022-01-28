@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 /**
 * Practical 15: Write a program to demonstrate all types of Inheritance concepts like.
-		2. Multi-level Inheritance.
+* 2. Multi-level Inheritance.
 * @author Shivang
 * @version 1.01 2022-01-25
 */
 
-class Details {
+class Raj {
 
 	String name;
 	int enrollnmentNo;
@@ -17,7 +17,7 @@ class Details {
 	public void studentDetails() { // Taking student details
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Enter the student name: ");
-		name = scanner.next();
+		name  = scanner.next();
 
 		System.out.print("Enter the Enrollnment no of student:");
 		enrollnmentNo = scanner.nextInt();	
@@ -31,7 +31,7 @@ class Details {
 
 } // End of class
 
-class Marks extends Details {
+class Marks extends Raj {
 
 	int advanceJava, webProgramming, cloudComputing, compilerDesign;
 	int firstTotal, secondTotal;
@@ -59,7 +59,7 @@ class Marks extends Details {
 		System.out.print("Enter the Compiler Design Marks:");
 		compilerDesign = scanner.nextInt();	
 	}
-	
+
 	float displayTotal() { // Display total
 		firstTotal = advanceJava + webProgramming;
 		secondTotal = cloudComputing + compilerDesign;
@@ -73,15 +73,15 @@ class Marks extends Details {
 
 } // End of class
 
-public class MultilevelInheritance extends Marks {
+public class StudentInfo extends Marks {
 
 	public static void main(String[] args) {	
-		MultilevelInheritance multilevelInheritance = new MultilevelInheritance();
-		multilevelInheritance.studentDetails();
-		multilevelInheritance.studentFirstSemMarks();
-		multilevelInheritance.studentSecondSemMarks();
-		multilevelInheritance.displayStudentDetails();
-		multilevelInheritance.displayTotal();
+		StudentInfo studentInfo = new StudentInfo();
+		studentInfo.studentDetails();
+		studentInfo.studentFirstSemMarks();
+		studentInfo.studentSecondSemMarks();
+		studentInfo.displayStudentDetails();
+		studentInfo.displayTotal();
 
 		System.out.println("Student average marks is:" + average + "%"); // Display Average
 	} // End of main

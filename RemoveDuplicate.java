@@ -31,4 +31,4 @@ public class RemoveDuplicate {
 		System.out.println("List values After removing Dublicate values:"+ listStrings); // Print list Values
 	} // End of main
 
-} // End of class
+} // End of Remove Duplicate class

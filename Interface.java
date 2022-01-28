@@ -23,4 +23,4 @@ class Interface implements InterfaceDetails {
 		interface1.display();
 	} // End of main
 
-} // End of class
+} // End of  interface class

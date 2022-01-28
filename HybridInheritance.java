@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 /**
 * Practical 15: Write a program to demonstrate all types of Inheritance concepts like.
-		4. Hybrid Inheritance.
+4. Hybrid Inheritance.
 * @author Shivang
 * @version 1.01 2022-01-25
 */
-
 class JavaInterview {
 
 	static int count = 0;
@@ -39,7 +38,7 @@ class JavaInterview {
 		return count;
 	}
 
-} // End of class
+} // End of java interview class
 
 class Intern extends JavaInterview {
 
@@ -55,7 +54,7 @@ class Intern extends JavaInterview {
 		}
 	}
 
-} // End of class
+} // End of intern class
 
 class Job extends JavaInterview {
 
@@ -89,7 +88,7 @@ class Job extends JavaInterview {
 		return count;
 	}
 
-} // End of class
+} // End of job class
 
 public class HybridInheritance extends Job {
 
@@ -116,10 +115,9 @@ public class HybridInheritance extends Job {
 			if (count >= 3) {
 				hybridInheritance.jobDetails();
 			}
-
 		} else {
 			System.out.println("Wrong Choice");
 		} 
 	} // End of main
 
-} // End of class
+} // End of hybrid inheritance class

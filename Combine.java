@@ -9,17 +9,14 @@ import java.util.Scanner;
 */
 class Parent {
 
-	int number1, number2, mul;
-
 	public Parent(int value1, int value2) {
-		this.number1 = value1;
-		this.number2 = value2;
 		System.out.println("Inside the Parent");
 
-		mul = number1 * number2;
-		System.out.println("Multiplication of two number is: " + mul); // Multiplication of two number
+		int multiplication = value1 * value2;
+		System.out.println("Multiplication of two number is: " + multiplication); // Multiplication of two number
 	}
-}
+
+} // End of parent class
 
 public class Combine extends Parent {
 
@@ -27,7 +24,7 @@ public class Combine extends Parent {
 		super(value1, value2);
 		System.out.println("Inside the Child");
 	}
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
@@ -42,4 +39,4 @@ public class Combine extends Parent {
 		new Combine(value1, value2);
 	} // End of main
 
-} //End of class
+} //End of Combine class

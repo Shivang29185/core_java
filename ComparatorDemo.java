@@ -26,7 +26,7 @@ class Students {
 		return "Students [id=" + id + ", age=" + age + ", name=" + name + "]";
 	}
 
-} // End of class
+} // End of Student class
 
 class AgeComparator implements Comparator <Students> {
 
@@ -35,42 +35,42 @@ class AgeComparator implements Comparator <Students> {
 		return student1.age - student2.age;
 	}
 
-} // End of class
+} // End of age comparator class
 
 public class ComparatorDemo {
 
 	public static void main(String[] args) {
-		ArrayList<Students> list = new ArrayList<Students>();
-		list.add(new Students(2, "Shivang", 21));
-		list.add(new Students(3, "Ravi", 23));
-		list.add(new Students(1, "Rutvik", 20));
+		ArrayList<Students> students= new ArrayList<Students>();
+		students.add(new Students(2, "Shivang", 21));
+		students.add(new Students(3, "Ravi", 23));
+		students.add(new Students(1, "Rutvik", 20));
 
 		System.out.println("List before Shorting"); // Printing Before Shorting
-		for (Students stDetails : list) {
-			System.out.println(stDetails);
+		for (Students students2 : students) {
+			System.out.println(students2);
 		}
 
-		Collections.sort(list, new Comparator<Students>() {
+		Collections.sort(students, new Comparator<Students>() { // Shorting method
 
 			@Override
-			public int compare(Students student1, Students student2) {
-				return student1.name.compareTo(student2.name);
+			public int compare(Students students1, Students students2) {
+				return students1.name.compareTo(students2.name);
 			}
-		}); // Shorting method
+		});
 
 		System.out.println();
 		System.out.println("List After Shorting using Name"); // Printing After Shorting
-		for (Students stDetails : list) {
-			System.out.println(stDetails);
+		for (Students students2 : students) {
+			System.out.println(students2);
 		}
 
-		Collections.sort(list, new AgeComparator()); // Shorting method
+		Collections.sort(students, new AgeComparator()); // Shorting method through class
 
 		System.out.println();
 		System.out.println("List After Shorting using age"); // Printing After Shorting
-		for (Students stDetails : list) {
-			System.out.println(stDetails);
+		for (Students students2 : students) {
+			System.out.println(students2);
 		}
 	} // End of main
 
-} // End of class
+} // End of comparator class

@@ -5,11 +5,10 @@ package corejava;
  * @author Shivang
  * @version 1.01 2022-01-20
  */
-
 public class Hello { // Class for Hello World
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");     
+		System.out.println("Hello World");
 	} // End main
 
-} // End of class
+} // End of hello class

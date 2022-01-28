@@ -7,10 +7,8 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-24
 */
-
 abstract class Shape {
 
-	float height1, breath1;
 	int side;
 
 	public Shape(int side) {
@@ -23,20 +21,19 @@ abstract class Shape {
 
 	abstract void areaOfTriangle(float height, float breath); // Abstract area of triangle method
 
-} // End of class
+} // End of shape class
 
 public class AbstractionDemo extends Shape {
 
 	static float height, breath;
 	static int side;
-	float area;
 
 	public AbstractionDemo(int side) { // Constructor for abstraction demo
 		super(side);
 	}
 
-	void areaOfTriangle(float height, float breat) { // Abstraction override
-		area = (height * breath) / 2;
+	void areaOfTriangle(float height, float breath) { // Abstraction override
+		float area = (height * breath) / 2;
 		System.out.println("Area of Triangle is:" + area);
 	}
 
@@ -58,4 +55,4 @@ public class AbstractionDemo extends Shape {
 		abstractionDemo.areaOfTriangle(height, breath);
 	} // End of main
 
-} // End of class
+} // End of abstraction demo class

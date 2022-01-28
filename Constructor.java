@@ -1,11 +1,12 @@
 package corejava;
 
+import java.util.Scanner;
+
 /**
 * Practical 7: Write a program to demonstrate the example of constructor and Parameterized constructor
 * @author Shivang
 * @version 1.01 2022-01-20
 */
-
 public class Constructor {
 
 	public Constructor() { // Default Constructor
@@ -24,8 +25,18 @@ public class Constructor {
 	}
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter the First value:");
+		int value1 = scanner.nextInt();
+
+		System.out.print("Enter the Second value");
+		int value2 = scanner.nextInt();
+
+		scanner.close();
+
 		new Constructor();
-		new Constructor(5, 20);
+		new Constructor(value1, value2);
 	} // End of main
 
-} //End of class
+} //End of Constructor class

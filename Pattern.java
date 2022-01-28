@@ -7,7 +7,6 @@ import java.util.Scanner;
  * @author Shivang
  * @version 1.01 2022-01-20
  */
-
 public class Pattern {
 
 	public static void main(String[] args) {
@@ -26,4 +25,4 @@ public class Pattern {
 		}
 	} // End of main
 
-} // End of class
+} // End of pattern class

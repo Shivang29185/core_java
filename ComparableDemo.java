@@ -21,8 +21,8 @@ class StudentDetails implements Comparable<StudentDetails> {
 	}
 
 	@Override
-	public int compareTo(StudentDetails student) { // Method	
-		return (this.id - student.id);
+	public int compareTo(StudentDetails studentDetails) { // Method	
+		return (this.id - studentDetails.id);
 	}
 
 	@Override
@@ -30,28 +30,28 @@ class StudentDetails implements Comparable<StudentDetails> {
 		return "StudentDetails [id=" + id + ", age=" + age + ", name=" + name + "]";
 	}
 
-} // End of class
+} // End of studentDetail class
 
 public class ComparableDemo {
 
 	public static void main(String[] args) {
-		ArrayList<StudentDetails> list = new ArrayList<StudentDetails>();
-		list.add(new StudentDetails(2, "Shivang", 21));
-		list.add(new StudentDetails(3, "Ravi", 23));
-		list.add(new StudentDetails(1, "Rutvik", 20));
+		ArrayList<StudentDetails> studentDetails = new ArrayList<StudentDetails>();
+		studentDetails.add(new StudentDetails(2, "Shivang", 21));
+		studentDetails.add(new StudentDetails(3, "Ravi", 23));
+		studentDetails.add(new StudentDetails(1, "Rutvik", 20));
 
 		System.out.println("List before Shorting"); // Printing Before Shorting
-		for (StudentDetails stDetails : list) {
-			System.out.println(stDetails);
+		for (StudentDetails studentDetails2 : studentDetails) {
+			System.out.println(studentDetails2);
 		}
 
-		Collections.sort(list); // Shorting method
+		Collections.sort(studentDetails); // Shorting method
 
 		System.out.println();
 		System.out.println("List After Shorting"); // Printing After Shorting
-		for (StudentDetails stDetails : list) {
-			System.out.println(stDetails);
+		for (StudentDetails studentDetails2 : studentDetails) {
+			System.out.println(studentDetails2);
 		}
 	} // End of main
 
-} // End of class
+} // End of comparable demo class

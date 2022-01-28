@@ -16,7 +16,7 @@ public class IteratorDemo {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Enter the total value you want to Enter:"); // Enter total valur
+		System.out.print("Enter the total value you want to Enter:"); // Enter total value
 		int value = scanner.nextInt();
 	
 		List<String> addValue = new ArrayList<String>();
@@ -25,6 +25,7 @@ public class IteratorDemo {
 			System.out.print("Enter value:");
 			addValue.add(scanner.next());
 		}
+		
 		scanner.close();
 
 		System.out.println("Without Iterator");
@@ -37,6 +38,6 @@ public class IteratorDemo {
 		while (iterator.hasNext()) { // Print the value using iterator
 			System.out.println(iterator.next());
 		}
-	} // End main
+	} // End of main
 
-} // End class
+} // End of iterator democlass

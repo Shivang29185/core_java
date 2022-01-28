@@ -12,10 +12,12 @@ import java.io.IOException;
 */
 public class CreateFile {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		FileWriter fileWriter = null;
+
 		try {
 			File file = new File("F:\\study\\8th sem\\java internship\\myTestFile");
-			FileWriter fileWriter = new FileWriter(file);
+			fileWriter = new FileWriter(file);
 
 			if (file.createNewFile()) { // Creating new file
 				System.out.println("File created: " + file.getName());
@@ -28,10 +30,11 @@ public class CreateFile {
 			fileWriter.write("Sem: 8 \n");
 			fileWriter.write("Branch: Computer\n");
 			fileWriter.write("Collage: GEC Modasa");
-			fileWriter.close();
 		} catch (IOException ioException) {
 			System.out.println("Error:" + ioException);
+		} finally {
+			fileWriter.close();
 		}
 	} // End main
 
-} // End class
+} // End create file class

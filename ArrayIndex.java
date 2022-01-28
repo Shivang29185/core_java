@@ -12,10 +12,10 @@ public class ArrayIndex {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int[] array = new int[20]; // Create array
-
-		System.out.print("Enter the number:");
+		System.out.print("Enter the total entry:");
 		int number = scanner.nextInt();
+
+		int[] array = new int[number]; // Create array
 
 		System.out.print("Enter Array Element:"); // Enter the array Element
 		for (int i = 0; i < number; i++) {
@@ -27,13 +27,17 @@ public class ArrayIndex {
 
 		scanner.close();
 
+		int count = 0;
+
 		for (int i = 0; i < array.length; i++) { // Search & print index
 			if (array[i] == find) {
 				System.out.println("Index of " + find + " is:" + i );
-			} else {
-				System.out.println("Element not found in Array");
+				count++;
 			}
-		}	
+		}
+		if (count < 1) {
+			System.out.println(find + " is not present in array");
+		} 
 	} // End of main
 
-} // End of class
+} // End of Array index class

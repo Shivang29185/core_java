@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 /**
 * Practical 15: Write a program to demonstrate all types of Inheritance concepts like.
-		1. Single Inheritance.
+* 1. Single Inheritance.
 * @author Shivang
 * @version 1.01 2022-01-24
 */
-
 class ParentClass {
 
 	String emailid;
@@ -26,7 +25,7 @@ class ParentClass {
 		scanner.close();
 	}
 
-} // End of class
+} // End of parent class
 
 public class SingleInheritance extends ParentClass {
 
@@ -57,4 +56,4 @@ public class SingleInheritance extends ParentClass {
 		scanner.close();
 	} // End of main
 	
-} // End of class
+} // End of single inheritance class

@@ -1,6 +1,8 @@
 package oopsconcept;
 
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -11,18 +13,27 @@ import java.io.IOException;
 */
 public class HandleFile {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		FileReader fileReader = null;
+		FileWriter fileWriter = null;
 		try {
-			FileReader fileReader = new FileReader("F:\\study\\8th sem\\java internship\\myTestFile"); // File reading
+			File file = new File("F:\\study\\8th sem\\java internship\\myNewTestFile");
+			fileReader = new FileReader("F:\\study\\8th sem\\java internship\\myTestFile"); // File reading
+			fileWriter = new FileWriter(file);
 
 			int i;
 			while ((i = fileReader.read()) != - 1 ) {
-				 System.out.print((char)i);
+				System.out.print((char)i);
+
+				i = Character.toUpperCase(i);
+				fileWriter.write(i);
 			}
-			fileReader.close();
 		} catch (IOException ioException) {
 			System.out.println("Error:" + ioException);
+		} finally {
+			fileReader.close();
+			fileWriter.close();
 		}
 	} // End of main
 
-} // End of class
+} // End of Handle file class

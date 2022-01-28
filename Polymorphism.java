@@ -7,7 +7,6 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-25
 */
-
 class Addition {
 
 	public void Add(int value1, int value2) { // Add with two parameter method
@@ -34,7 +33,7 @@ class Addition {
 		System.out.println("Addition of four value is:" + sum3);
 	}
 
-} // End of class
+} // End of Addition class
 
 public class Polymorphism extends Addition {
 
@@ -70,4 +69,4 @@ public class Polymorphism extends Addition {
 		polymorphism.Add(value1, value2);
 	} // End of main
 
-} // End of class
+} // End of polymorphism class

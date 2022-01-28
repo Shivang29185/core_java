@@ -33,4 +33,4 @@ public class MapSet {
 		System.out.print(set);
 	} // End of main
 
-} // End of class
+} // End of Map set class

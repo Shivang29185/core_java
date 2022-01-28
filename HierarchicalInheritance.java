@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 /**
 * Practical 15: Write a program to demonstrate all types of Inheritance concepts like.
-		3. Hierarchical Inheritance.
+* 3. Hierarchical Inheritance.
 * @author Shivang
 * @version 1.01 2022-01-25
 */
-
 class Internship {
 
 	static String choice;
@@ -21,9 +20,10 @@ class Internship {
 		choice = scanner.next();
 
 		return choice;	
+
 	}
 
-} // End of class
+} // End of internship class
 
 class Java extends Internship {
 
@@ -34,7 +34,7 @@ class Java extends Internship {
 		System.out.println("After Internship Salary will be 25000");
 	}
 
-} // End of class
+} // End of java class
 
 class Android extends Internship {
 
@@ -45,7 +45,7 @@ class Android extends Internship {
 		System.out.println("After Internship Salary will be 28000");
 	}
 
-} // End of class
+} // End of android class
 
 class Angular extends Internship {
 
@@ -56,7 +56,7 @@ class Angular extends Internship {
 		System.out.println("After Internship Salary will be 25000");
 	}
 
-} // End of class
+} // End of angular class
 
 public class HierarchicalInheritance extends Internship {
 
@@ -103,7 +103,8 @@ public class HierarchicalInheritance extends Internship {
 				System.out.println("Exit");
 				break;
 			}
+		
 		}
 	} // End of main
 
-} // End of class
+} // End of Hierarichal inheritance class

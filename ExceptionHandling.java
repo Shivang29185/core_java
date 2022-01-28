@@ -38,4 +38,4 @@ public class ExceptionHandling {
 		}
 	} // End of main
 
-} // End of class
+} // End of Exception handling class

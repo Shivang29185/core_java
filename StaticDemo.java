@@ -7,7 +7,6 @@ import java.util.Scanner;
 * @author Shivang
 * @version 1.01 2022-01-24
 */
-
 public class StaticDemo {
 
 	static double pi = 3.14; // Static variable

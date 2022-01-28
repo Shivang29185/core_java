@@ -8,7 +8,6 @@ import java.util.Scanner;
  * @author Shivang
  * @version 1.01 2022-01-20
  */
-
 public class FindingMonth {
 
 	public static void main(String[] args) {	
@@ -74,4 +73,4 @@ public class FindingMonth {
 		}
 	} // End of main
 
-} // End of class
+} // End of Finding month class
