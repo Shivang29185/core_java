@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /**
-* Practical 23:Write a program to demonstrate comparator interface.
+* Practical 23:Write a program to demonstrate the comparator interface.
 * @author Shivang
 * @version 1.01 2022-01-27
 */
@@ -54,7 +54,6 @@ public class ComparatorDemo {
 
 			@Override
 			public int compare(Students student1, Students student2) {
-				
 				return student1.name.compareTo(student2.name);
 			}
 		}); // Shorting method
