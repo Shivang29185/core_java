@@ -37,14 +37,13 @@ public class AbstractionDemo extends Shape {
 	}
 
 	public static void main(String[] args) {
-		float height, breath;
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Enter the Height of triangle:");
-		height = scanner.nextFloat();
+		float height = scanner.nextFloat();
 
 		System.out.print("Enter the Breath of triangle:");
-		breath = scanner.nextFloat();
+		float breath = scanner.nextFloat();
 
 		System.out.print("Enter the side of square:");
 		side = scanner.nextInt();
