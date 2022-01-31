@@ -3,6 +3,7 @@ package oopsconcept;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
 * Practical 24:Write a program to create a text file(The file name is “myTestFile”)and add your personal details to 
@@ -12,11 +13,13 @@ import java.io.IOException;
 */
 public class CreateFile {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, NullPointerException {
+		Scanner scanner = new Scanner(System.in);
 		FileWriter fileWriter = null;
+		String pathname = "F:\\study\\8th sem\\java internship\\myTestFile";
+		File file = new File(pathname);
 
 		try {
-			File file = new File("F:\\study\\8th sem\\java internship\\myTestFile");
 			fileWriter = new FileWriter(file);
 
 			if (file.createNewFile()) { // Creating new file
@@ -34,6 +37,15 @@ public class CreateFile {
 			System.out.println("Error:" + ioException);
 		} finally {
 			fileWriter.close();
+		}
+
+		System.out.println("Do you want to delete current file? (yes / no): ");
+		String choice = scanner.next();
+
+		scanner.close();
+		if (choice.equalsIgnoreCase("yes")) {
+			file.delete();
+			System.out.println("File is deleted:" + file.getName());
 		}
 	} // End main
 

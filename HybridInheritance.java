@@ -12,8 +12,7 @@ class JavaInterview {
 
 	static int count = 0;
 
-	int basicJava() { // Basic java question
-		Scanner scanner = new Scanner(System.in);
+	int basicJava(Scanner scanner) { // Basic java question
 		System.out.print("Do you know about class(yes / no):");
 		String classAnswer = scanner.next();
 
@@ -58,9 +57,7 @@ class Intern extends JavaInterview {
 
 class Job extends JavaInterview {
 
-	int applyedJob() { // Job method
-		Scanner scanner = new Scanner(System.in);
-
+	int applyedJob(Scanner scanner) { // Job method
 		System.out.print("Do you know about Inheritance(yes / no):");
 		String inheritanceAnswer = scanner.next();
 
@@ -105,12 +102,12 @@ public class HybridInheritance extends Job {
 
 		if (choice.equalsIgnoreCase("Internship")) {
 			Intern intern = new Intern();
-			intern.basicJava();
+			intern.basicJava(scanner);
 			intern.applyedInternship();
 		} else if (choice.equalsIgnoreCase("Job")) {
 			HybridInheritance hybridInheritance = new HybridInheritance();
-			hybridInheritance.basicJava();
-			hybridInheritance.applyedJob();
+			hybridInheritance.basicJava(scanner);
+			hybridInheritance.applyedJob(scanner);
 
 			if (count >= 3) {
 				hybridInheritance.jobDetails();

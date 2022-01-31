@@ -14,8 +14,7 @@ class Raj {
 	String name;
 	int enrollnmentNo;
 
-	public void studentDetails() { // Taking student details
-		Scanner scanner = new Scanner(System.in);
+	public void studentDetails(Scanner scanner) { // Taking student details
 		System.out.print("Enter the student name: ");
 		name  = scanner.next();
 
@@ -33,12 +32,15 @@ class Raj {
 
 class Marks extends Raj {
 
-	int advanceJava, webProgramming, cloudComputing, compilerDesign;
-	int firstTotal, secondTotal;
+	int advanceJava;
+	int webProgramming;
+	int cloudComputing;
+	int compilerDesign;
+	int firstTotal;
+	int secondTotal;
 	static float average;
 
-	public void studentFirstSemMarks() { // First semester marks
-		Scanner scanner = new Scanner(System.in);
+	public void studentFirstSemMarks(Scanner scanner) { // First semester marks
 		System.out.println();
 		System.out.println("Enter the First Sem Marks:");
 		System.out.print("Enter the Advance Java Marks: ");
@@ -48,9 +50,7 @@ class Marks extends Raj {
 		webProgramming = scanner.nextInt();	
 	}
 
-	public void studentSecondSemMarks() { // Second semester marks
-		Scanner scanner = new Scanner(System.in);
-
+	public void studentSecondSemMarks(Scanner scanner) { // Second semester marks
 		System.out.println();
 		System.out.println("Enter the Second Sem Marks:");
 		System.out.print("Enter the Cloud Computing Marks: ");
@@ -75,15 +75,19 @@ class Marks extends Raj {
 
 public class StudentInfo extends Marks {
 
-	public static void main(String[] args) {	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
 		StudentInfo studentInfo = new StudentInfo();
-		studentInfo.studentDetails();
-		studentInfo.studentFirstSemMarks();
-		studentInfo.studentSecondSemMarks();
+		studentInfo.studentDetails(scanner);
+		studentInfo.studentFirstSemMarks(scanner);
+		studentInfo.studentSecondSemMarks(scanner);
 		studentInfo.displayStudentDetails();
 		studentInfo.displayTotal();
 
+		scanner.close();
 		System.out.println("Student average marks is:" + average + "%"); // Display Average
+
 	} // End of main
 
 } // End of class

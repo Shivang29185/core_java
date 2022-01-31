@@ -1,5 +1,6 @@
 package corejava;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -23,7 +24,7 @@ public class Wrapper {
 
 		scanner.close();
 
-		if (value1 == value2 ) {
+		if (Objects.equals(value1, value2) ) {
 			System.out.println("Both values are Same ");
 		} else {
 			System.out.println("Different values");

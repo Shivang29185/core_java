@@ -15,10 +15,10 @@ public class Constructor {
 		System.out.println(number);
 	}
 
-	public Constructor(int a, int b) { // Parameterized constructor for adding two values
-		int number = a;
-		int number1 = b;
-		int sum = number + number1;
+	public Constructor(int value1, int value2) { // Parameterized constructor for adding two values
+		int number = value1;
+		int number2 = value2;
+		int sum = number + number2;
 
 		System.out.println("Parameterized Constructor");
 		System.out.println(sum);

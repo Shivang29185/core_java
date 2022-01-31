@@ -13,13 +13,13 @@ import java.util.Set;
 public class MapSet {
 
 	public static void main(String[] args) {
-		Map<String, String> map = new HashMap<String, String>(); // Set data using Map
+		Map<String, String> map = new HashMap<>(); // Set data using Map
 		map.put("Name", "Shivang");
 		map.put("RollNo", "13");
 		map.put("Branch", "Computer");
 		map.put("SPI", "7.5");
 
-		Set<String> set = new HashSet<String>(); // Set data using Set
+		Set<String> set = new HashSet<>(); // Set data using Set
 		set.add("Shivang");
 		set.add("13");
 		set.add("Computer");

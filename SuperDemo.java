@@ -11,8 +11,7 @@ class SuperClass {
 
 	int show(int value1, int value2) {
 		System.out.println("Inside the parent");
-		int substraction = value1 - value2;
-		return substraction;
+		return value1 - value2;
 	}
 
 } // End of super class

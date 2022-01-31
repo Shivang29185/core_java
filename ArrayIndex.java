@@ -21,7 +21,7 @@ public class ArrayIndex {
 		for (int i = 0; i < number; i++) {
 			array[i] = scanner.nextInt();
 		}
-
+	
 		System.out.print("Enter the Array Element which index you want to found:"); 
 		int find = scanner.nextInt();
 
@@ -35,6 +35,7 @@ public class ArrayIndex {
 				count++;
 			}
 		}
+
 		if (count < 1) {
 			System.out.println(find + " is not present in array");
 		} 

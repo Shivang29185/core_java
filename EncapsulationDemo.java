@@ -1,5 +1,6 @@
 package oopsconcept;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -9,70 +10,84 @@ import java.util.Scanner;
 */
 public class EncapsulationDemo {
 
-	private String studentName;
-	private int studentRollNo;
-	private String studentBranch;
-	private String studentResult;
+	class GetSet {
 
-	public String getStudentName() {
-		return studentName;
-	}
+		private String studentName;
+		private int studentRollNo;
+		private String studentBranch;
+		private String studentResult;
 
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
+		public String getStudentName() {
+			return studentName;
+		}
 
-	public int getStudentRollNo() {
-		return studentRollNo;
-	}
+		public void setStudentName(String studentName) {
+			this.studentName = studentName;
+		}
 
-	public void setStudentRollNo(int studentRollNo) {
-		this.studentRollNo = studentRollNo;
-	}
+		public int getStudentRollNo() {
+			return studentRollNo;
+		}
 
-	public String getStudentBranch() {
-		return studentBranch;
-	}
+		public void setStudentRollNo(int studentRollNo) {
+			this.studentRollNo = studentRollNo;
+		}
 
-	public void setStudentBranch(String studentBranch) {
-		this.studentBranch = studentBranch;
-	}
+		public String getStudentBranch() {
+			return studentBranch;
+		}
 
-	public String getStudentResult() {
-		return studentResult;
-	}
+		public void setStudentBranch(String studentBranch) {
+			this.studentBranch = studentBranch;
+		}
 
-	public void setStudentResult(String studentResult) {
-		this.studentResult = studentResult;
-	}
+		public String getStudentResult() {
+			return studentResult;
+		}
+
+		public void setStudentResult(String studentResult) {
+			this.studentResult = studentResult;
+		}
+
+	} // End of get set class
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
+		ArrayList<GetSet> arrayList = new ArrayList<>();
+
 		System.out.print("Enter the number of total Data Entry:"); // Total number of Data
 		int choice = scanner.nextInt();
 
-		EncapsulationDemo encapsulationDemo = new EncapsulationDemo();
 
 		for (int i = 1; i <= choice; i++) {
+			GetSet getSet = new EncapsulationDemo().new GetSet();
+
+			System.out.println("Enter the "+ i + " Student Detail:");
 			System.out.print("Enter Student Name:"); // Student name
-			encapsulationDemo.setStudentName(scanner.next());
+			getSet.setStudentName(scanner.next());
 
 			System.out.print("Enter Student Roll No:"); // Student roll no
-			encapsulationDemo.setStudentRollNo(scanner.nextInt());
+			getSet.setStudentRollNo(scanner.nextInt());
 
 			System.out.print("Enter Student Branch:"); // Student branch
-			encapsulationDemo.setStudentBranch(scanner.next());
+			getSet.setStudentBranch(scanner.next());
 
 			System.out.print("Enter Student result(pass / Fail):"); // Student result
-			encapsulationDemo.setStudentResult(scanner.next());
+			getSet.setStudentResult(scanner.next());
 
+			System.out.println();	
+
+			arrayList.add(getSet);
+		}
+
+		for (GetSet getSet : arrayList) {
 			System.out.println();
 			System.out.println("Student Details:"); // Display student details
-			System.out.println("Name of student is:" + encapsulationDemo.getStudentName()); 
-			System.out.println("Roll no is:" + encapsulationDemo.getStudentRollNo());
-			System.out.println("Branch is:" + encapsulationDemo.getStudentBranch());
-			System.out.println("Result is:" + encapsulationDemo.getStudentResult());
+			System.out.println("Name of student is:" + getSet.getStudentName()); 
+			System.out.println("Roll no is:" + getSet.getStudentRollNo());
+			System.out.println("Branch is:" + getSet.getStudentBranch());
+			System.out.println("Result is:" + getSet.getStudentResult());
 			System.out.println();
 			System.out.println();
 		}

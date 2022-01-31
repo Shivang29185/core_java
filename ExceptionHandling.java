@@ -18,7 +18,8 @@ public class ExceptionHandling {
 		scanner.close();
 
 		try {
-			value = (value / 0); // Divide by zero
+			int value2 = value;
+			value = (value2 / 0); // Divide by zero
 		} catch (ArithmeticException arithmeticException) {
 			System.out.println("Exception:" + arithmeticException);
 		}

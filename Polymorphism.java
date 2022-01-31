@@ -67,6 +67,8 @@ public class Polymorphism extends Addition {
 
 		Polymorphism polymorphism = new Polymorphism();
 		polymorphism.Add(value1, value2);
+
+		scanner.close();
 	} // End of main
 
 } // End of polymorphism class

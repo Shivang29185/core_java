@@ -12,15 +12,13 @@ class Internship {
 
 	static String choice;
 
-	String checkInternshipDetail() { // Check internship
-		Scanner scanner = new Scanner(System.in);
+	String checkInternshipDetail(Scanner scanner) { // Check internship
 
 		System.out.println();
 		System.out.print("Want to Check Internship Details(yes / no):");
 		choice = scanner.next();
 
 		return choice;	
-
 	}
 
 } // End of internship class
@@ -62,8 +60,7 @@ public class HierarchicalInheritance extends Internship {
 
 	static String input;
 
-	String details() { // User details
-		Scanner scanner = new Scanner(System.in);
+	String details(Scanner scanner) { // User details
 		System.out.println();
 		System.out.println("Enter 'Java' for Checking Java Internship Details");
 		System.out.println("Enter 'Android' for Checking Android Internship Details");
@@ -76,35 +73,37 @@ public class HierarchicalInheritance extends Internship {
 	}
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
 		HierarchicalInheritance hierarchicalInheritance = new HierarchicalInheritance();
-		hierarchicalInheritance.details();
+		hierarchicalInheritance.details(scanner);
 
 		while (true) {
 			if (input.equalsIgnoreCase("java")) {
 				Java java = new Java();
 				java.javaInternship();
-				java.checkInternshipDetail();
+				java.checkInternshipDetail(scanner);
 			} else if (input.equalsIgnoreCase("Android")) {
 				Android android = new Android();
 				android.androidInternship();
-				android.checkInternshipDetail();
+				android.checkInternshipDetail(scanner);
 			} else if (input.equalsIgnoreCase("Angular")) {
 				Angular angular = new Angular();
 				angular.angularInternship();
-				angular.checkInternshipDetail();
+				angular.checkInternshipDetail(scanner);
 			} else {
 				System.out.println("Wrong Choice");
-				hierarchicalInheritance.checkInternshipDetail();
+				hierarchicalInheritance.checkInternshipDetail(scanner);
 			}
 
 			if (choice.equalsIgnoreCase("yes")) {
-				hierarchicalInheritance.details();
+				hierarchicalInheritance.details(scanner);
 			} else {
 				System.out.println("Exit");
 				break;
 			}
-		
 		}
+		scanner.close();
 	} // End of main
 
 } // End of Hierarichal inheritance class

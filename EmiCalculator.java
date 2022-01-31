@@ -36,4 +36,4 @@ public class EmiCalculator {
 		emiCalculator.calculate (principle, interest, time);
 	} // End of main
 
-}// End of emicalculator class
+}// End of Emi calculator class

@@ -14,7 +14,7 @@ public class RemoveDuplicate {
 
 	public static void main(String[] args) {
 		// Initialization of String
-		List<String> listStrings = new ArrayList<String>(Arrays.asList("A", "B", "C", "D", "A", "C", "E", "E", "E"));
+		List<String> listStrings = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "A", "C", "E", "E", "E"));
 
 		System.out.println("List values:"+ listStrings); // Print list Values
 

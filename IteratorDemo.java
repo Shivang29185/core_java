@@ -19,7 +19,7 @@ public class IteratorDemo {
 		System.out.print("Enter the total value you want to Enter:"); // Enter total value
 		int value = scanner.nextInt();
 	
-		List<String> addValue = new ArrayList<String>();
+		List<String> addValue = new ArrayList<>();
 
 		for (int i = 0; i < value; i++) { // Getting array from user
 			System.out.print("Enter value:");
@@ -40,4 +40,4 @@ public class IteratorDemo {
 		}
 	} // End of main
 
-} // End of iterator democlass
+} // End of iterator demo class

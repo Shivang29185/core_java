@@ -42,10 +42,10 @@ public class SingleInheritance extends ParentClass {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.print("Enter the name:");
 		name = scanner.next();
-		
+
 		System.out.print("Enter the Mobile no:");
 		mobileNo = scanner.next();
 

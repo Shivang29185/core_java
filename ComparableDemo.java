@@ -35,7 +35,7 @@ class StudentDetails implements Comparable<StudentDetails> {
 public class ComparableDemo {
 
 	public static void main(String[] args) {
-		ArrayList<StudentDetails> studentDetailsList = new ArrayList<StudentDetails>();
+		ArrayList<StudentDetails> studentDetailsList = new ArrayList<>();
 		studentDetailsList.add(new StudentDetails(2, "Shivang", 21));
 		studentDetailsList.add(new StudentDetails(3, "Ravi", 23));
 		studentDetailsList.add(new StudentDetails(1, "Rutvik", 20));

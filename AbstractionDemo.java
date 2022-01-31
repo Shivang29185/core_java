@@ -9,10 +9,9 @@ import java.util.Scanner;
 */
 abstract class Shape {
 
-	int side;
+	static int side;
 
-	public Shape(int side) {
-		this.side = side;
+	Shape() {
 		int area = side * side;
 
 		System.out.println();
@@ -24,12 +23,6 @@ abstract class Shape {
 } // End of shape class
 
 public class AbstractionDemo extends Shape {
-
-	static int side;
-
-	public AbstractionDemo(int side) { // Constructor for abstraction demo
-		super(side);
-	}
 
 	void areaOfTriangle(float height, float breath) { // Abstraction override
 		float area = (height * breath) / 2;
@@ -50,7 +43,7 @@ public class AbstractionDemo extends Shape {
 
 		scanner.close();
 
-		AbstractionDemo abstractionDemo = new AbstractionDemo(side);
+		AbstractionDemo abstractionDemo = new AbstractionDemo();
 		abstractionDemo.areaOfTriangle(height, breath);
 	} // End of main
 
